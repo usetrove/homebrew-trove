@@ -5,21 +5,21 @@
 class Trove < Formula
   desc "The efficiency layer for AI coding agents"
   homepage "https://github.com/usetrove/trove"
-  version "0.2.2"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usetrove/trove/releases/download/v0.2.2/trove_0.2.2_darwin_amd64.tar.gz"
-      sha256 "1e3fc037d58b6432763c650a0b85b48d84e3c69bba0f839e00769c9200282c75"
+      url "https://github.com/usetrove/trove/releases/download/v0.3.0/trove_0.3.0_darwin_amd64.tar.gz"
+      sha256 "db20a1bdc838a14d17c4d5cf1d7512b733eed4091c919eb7e512562f1e96ecbf"
 
       define_method(:install) do
         bin.install "trove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usetrove/trove/releases/download/v0.2.2/trove_0.2.2_darwin_arm64.tar.gz"
-      sha256 "01ff661ca0ea3d305b18edb4e0c3126a261878944972eb974e015feb6ac5125d"
+      url "https://github.com/usetrove/trove/releases/download/v0.3.0/trove_0.3.0_darwin_arm64.tar.gz"
+      sha256 "3218c29d7a9d0d51ac8f539a1684c89317709f3035a85033589e7de76aa1098e"
 
       define_method(:install) do
         bin.install "trove"
@@ -29,15 +29,15 @@ class Trove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usetrove/trove/releases/download/v0.2.2/trove_0.2.2_linux_amd64.tar.gz"
-      sha256 "9d917c90c7183729a9a1fc1921813cba63f3371c95c0f7ea1acab0d882d84406"
+      url "https://github.com/usetrove/trove/releases/download/v0.3.0/trove_0.3.0_linux_amd64.tar.gz"
+      sha256 "d8ede5e60cfef57089de51df26b3eecd72a7d5442c1edafbd54909aacaad7864"
       define_method(:install) do
         bin.install "trove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usetrove/trove/releases/download/v0.2.2/trove_0.2.2_linux_arm64.tar.gz"
-      sha256 "781308bef062f4db80072c20479ebe794b289965924688dcfb21995da4b67623"
+      url "https://github.com/usetrove/trove/releases/download/v0.3.0/trove_0.3.0_linux_arm64.tar.gz"
+      sha256 "a70e0908f164ed73d126b01bd59500e823962060332fbcb5dbb439f8cb35d802"
       define_method(:install) do
         bin.install "trove"
       end
